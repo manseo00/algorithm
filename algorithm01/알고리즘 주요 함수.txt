@@ -1,0 +1,45 @@
+알고리즘 주요 함수
+
+- 문자열 길이 : str.length()
+- 문자열 추출 : str.substring(3)
+- 문자열 추출 : str.substring(3,5) // 5전까지
+- 문자열 위치 : str.indexOf("c")
+- 문자열 한글자 뽑기 : str.charAt(0)
+- 문자열 뒤집기 : new StringBuffer(str).reverse().toString();
+- 문자열 char[] : str.toCharArray();
+
+- 정수의 제곱 : (int)Math.pow(su, 2);		// 두번째가 제곱
+- 문자열 -> 정수 변환 : Integer.parseInt("10")
+- 기본타입 -> 문자열 변환 : String.valueOf(10)
+- 정수 -> 2진수, 8진수, 10진수 문자열 변환 : 
+	Integer.toString(sum)
+	Integer.toString(sum,2)
+	Integer.toString(sum,8)
+- 큰 수, 큰 정수 : 
+	BigInteger big = new BigInteger("26")		// 문자
+	BigInteger big = BigInteger.valueOf(26)	// 숫자
+	
+- 문자열 구분자 >> 문자열 배열
+	String[] arr = str.split(" ")	
+- 문자열 배열 구분자 >> 문자열
+	String = String.join(" ", arr)
+- 배열 출력 : System.out.println(Arrays.toString(arr))
+- 순정렬(배열) : Arrays.sort(arr)
+- 역정렬(배열, 뒤집기) : 
+	List<String> list = Arrays.asList(arr);
+	Collections.reverse(list);
+		
+- 스트림 사용 문자열배열 >> 정수배열
+	int[] sus = Arrays.stream(arr).mapToInt(Integer::parseInt).toArray(); 	
+- 스트림 사용 정수배열 >> 문자열 배열
+	arr = Arrays.stream(sus).mapToObj(String::valueOf).toArray(String[]::new);	
+- 스트림 파이프라인을 이용한 코딩방법 << 함수형프로그래밍 :
+	long count2 = names.stream().filter(x-> x.contains("2")).count();	
+	
+	
+	
+	
+	
+	
+	
+	
