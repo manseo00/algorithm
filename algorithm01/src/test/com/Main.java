@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Main {
 
 	/*
-	 * 날짜 : 2023.05.17
 	 * 문제 : 입력받은(주어진) 문자열의 길이를 출력하는 프로그램 작성
 	 * 입력 예시 : abcdefd
 	 * 출력 예시 : 7
