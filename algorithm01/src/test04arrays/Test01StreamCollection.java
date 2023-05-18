@@ -5,8 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.sql.rowset.serial.SQLOutputImpl;
-
 public class Test01StreamCollection {
 
 	public static void main(String[] args) {

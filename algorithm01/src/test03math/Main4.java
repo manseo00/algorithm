@@ -2,7 +2,6 @@ package test03math;
 
 import java.io.IOException;
 import java.math.BigInteger;
-import java.util.Scanner;
 
 public class Main4 {
 
@@ -16,11 +15,14 @@ public class Main4 {
 	 * 			 15
 	 * 출력 예시 : 26
 	 * 사용 : BigInteger
+	 * 
+	 * 참고 : 제곱근 sqrt(), 절대값 abs(), 소수점 자리수 floor()
+	 * 
 	 * */
 	
 	public static void main(String[] args) throws IOException {
 
-		Scanner sc = new Scanner(System.in);
+//		Scanner sc = new Scanner(System.in);
 		
 //		int su1 = sc.nextInt();
 //		int su2 = sc.nextInt();
@@ -48,6 +50,13 @@ public class Main4 {
 		
 		answer = String.valueOf(sum);
 //		answer = Integer.toString(sum);
+		
+		//참고 : 제곱근 sqrt(), 절대값 abs(), 소수점 자리수 floor()
+		System.out.println(Math.sqrt(100));
+		System.out.println((int)Math.sqrt(100));
+		System.out.println(Math.abs(-100));
+		System.out.println(Math.floor(3.14));
+		
 		return answer;
 	}
 

@@ -12,31 +12,33 @@
 - 문자열 -> 정수 변환 : Integer.parseInt("10")
 - 기본타입 -> 문자열 변환 : String.valueOf(10)
 - 정수 -> 2진수, 8진수, 10진수 문자열 변환 : 
-	Integer.toString(sum)
-	Integer.toString(sum,2)
-	Integer.toString(sum,8)
+		Integer.toString(sum)
+		Integer.toString(sum,2)
+		Integer.toString(sum,8)
 - 큰 수, 큰 정수 : 
-	BigInteger big = new BigInteger("26")		// 문자
-	BigInteger big = BigInteger.valueOf(26)	// 숫자
+		BigInteger big = new BigInteger("26")	// 문자
+		BigInteger big = BigInteger.valueOf(26)	// 숫자
 	
 - 문자열 구분자 >> 문자열 배열
-	String[] arr = str.split(" ")	
+		String[] arr = str.split(" ")	
 - 문자열 배열 구분자 >> 문자열
-	String = String.join(" ", arr)
+		String = String.join(" ", arr)
 - 배열 출력 : System.out.println(Arrays.toString(arr))
 - 순정렬(배열) : Arrays.sort(arr)
 - 역정렬(배열, 뒤집기) : 
-	List<String> list = Arrays.asList(arr);
-	Collections.reverse(list);
+		List<String> list = Arrays.asList(arr);
+		Collections.reverse(list);
 		
 - 스트림 사용 문자열배열 >> 정수배열
-	int[] sus = Arrays.stream(arr).mapToInt(Integer::parseInt).toArray(); 	
+		int[] sus = Arrays.stream(arr).mapToInt(Integer::parseInt).toArray(); 	
 - 스트림 사용 정수배열 >> 문자열 배열
-	arr = Arrays.stream(sus).mapToObj(String::valueOf).toArray(String[]::new);	
+		arr = Arrays.stream(sus).mapToObj(String::valueOf).toArray(String[]::new);	
 - 스트림 파이프라인을 이용한 코딩방법 << 함수형프로그래밍 :
-	long count2 = names.stream().filter(x-> x.contains("2")).count();	
+		long count2 = names.stream().filter(x-> x.contains("2")).count();	
 	
-	
+- 제곱근 sqrt() : Math.sqrt(100)	>> 10.0
+- 절대값 abs() : Math.abs(-100)	>> 100
+- 소수점 자리수 floor()	 : Math.floor(3.14)	>> 3.0	
 	
 	
 	

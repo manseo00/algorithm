@@ -30,7 +30,7 @@ public class Test02StreamArrays {
 		System.out.println(count);
 		
 		List<Double> list = Arrays.stream(ds).filter(x->x*10>=20).boxed().collect(Collectors.toList());
-		
+		System.out.println(list);
 	
 	}
 
