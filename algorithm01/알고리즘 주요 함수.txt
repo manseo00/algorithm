@@ -40,8 +40,10 @@
 - 절대값 abs() : Math.abs(-100)	>> 100
 - 소수점 자리수 floor()	 : Math.floor(3.14)	>> 3.0	
 	
-	
-	
+- Set 스트림 최댓값,최소값(max,min) :
+		primeNumbers.stream().mapToLong(i -> i).max().getAsLong();
+- Collection 최대값,최소값(max,min) : 
+		Collections.max(list);
 	
 	
 	
