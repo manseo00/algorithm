@@ -8,6 +8,12 @@
 - 문자열 뒤집기 : new StringBuffer(str).reverse().toString();
 - 문자열 char[] : str.toCharArray();
 
+- 문자열 비교 (대소문자) : equals()
+- 문자열 비교 (대소문자 구분 x) : equalsIngnoreCase()
+- 문자열 대문자로 변경 : str.toUpperCase()
+- 문자열 소문자로 변경 : str.toLowerCase()
+- 문자열 대소문자 확인 : Character.isUpperCase(answer.charAt(0))
+
 - 정수의 제곱 : (int)Math.pow(su, 2);		// 두번째가 제곱
 - 문자열 -> 정수 변환 : Integer.parseInt("10")
 - 기본타입 -> 문자열 변환 : String.valueOf(10)
@@ -28,7 +34,8 @@
 - 역정렬(배열, 뒤집기) : 
 		List<String> list = Arrays.asList(arr);
 		Collections.reverse(list);
-		
+
+- 스트림 필터 카운트 : list.stream().filter(x->x.equalsIgnoreCase(str)).count()
 - 스트림 사용 문자열배열 >> 정수배열
 		int[] sus = Arrays.stream(arr).mapToInt(Integer::parseInt).toArray(); 	
 - 스트림 사용 정수배열 >> 문자열 배열
@@ -42,8 +49,45 @@
 	
 - Set 스트림 최댓값,최소값(max,min) :
 		primeNumbers.stream().mapToLong(i -> i).max().getAsLong();
+		Arrays.stream(sums).max().getAsInt();
 - Collection 최대값,최소값(max,min) : 
 		Collections.max(list);
+	
+- 배열에 넣기 : String[] arr = str.split("");
+- 리스트에 넣기 : List<String> list = Arrays.asList(arr);
+- 문자열을 캐릭터 배열에 넣기 : char[] arr = str.toCharArray();
+
+- 문자 알파벳 정렬 : Collections.sort(list);
+- 단어 길이 정렬 : list.sort(Comparator.comparingInt(String::length));
+- 가장 긴 단어 : answer = list.stream().max(Comparator.comparing(String::length)).get();
+- 가장 긴 단어 길이 : System.out.println(list.stream().map(String::length).max(Integer::compare).get());
+	
+- 알파벳 검증 : Character.isAlphabetic(0); , str.matches[^a-zA-Z]	
+- 숫자 검증 : Character.isDigit(x)
+- 바꾸기 : str.replace() , str.replaceAll()
+- 알파벳 빼구 제거 : str.replaceAll("[^a-zA-Z]", "");	
+- 숫자 빼구 제거 : str.replaceAll("[^0-9]", "");
+	
+- 정수 배열 합 : Arrays.stream(score).sum()
+- 정수 배열 평균 : Arrays.stream(score).average().orElse(0)
+
+- 배열 채우기 : Arrays.fill(rank, 1);
+	
+===========================================================================================
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
