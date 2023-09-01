@@ -6,7 +6,7 @@ class Solution {
             answer = s.substring(str.length/2-1,str.length/2+1);
         }else{
             answer = s.substring(str.length/2,str.length/2+1);
-        }
+        } 
         
         return answer;
     }
