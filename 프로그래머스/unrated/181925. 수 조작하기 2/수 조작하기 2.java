@@ -12,11 +12,6 @@ class Solution {
             }else if(numLog[i-1]-numLog[i]==-10){
                 answer += "d";
             }
-            
-            if(i==numLog.length){
-                break;
-            }
-            
         }
         
         return answer;
