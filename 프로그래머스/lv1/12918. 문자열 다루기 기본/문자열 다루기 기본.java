@@ -7,7 +7,7 @@ class Solution {
                 if (!Character.isDigit(s.charAt(i))) {
                     answer = false;
                     break;
-                } 
+                }  
             }
         } else {
             answer = false;
