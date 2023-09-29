@@ -8,7 +8,7 @@ class Solution {
             }else{
                 answer += "박";
             }
-            i++; 
+            i++;  
         } 
         
         return answer;
