@@ -6,7 +6,7 @@ class Solution {
             if(num_list[i] == n) answer = 1;
             else if(answer == 1 && num_list[i] != n) answer = 1;
             else answer = 0;
-        }
+        } 
         
         return answer;
     }
