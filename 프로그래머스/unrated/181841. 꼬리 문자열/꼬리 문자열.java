@@ -9,6 +9,6 @@ class Solution {
             else answer += str_list[i];
         }
         
-        return answer;
+        return answer;  
     }
 }
