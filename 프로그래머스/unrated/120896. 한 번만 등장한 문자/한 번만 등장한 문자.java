@@ -6,7 +6,7 @@ class Solution {
         int count = 0;
           
         Arrays.sort(str);
-        
+         
         for(int i = 0; i < str.length; i++){
             count = 0;
             for(int j = 0; j < str.length; j++){
