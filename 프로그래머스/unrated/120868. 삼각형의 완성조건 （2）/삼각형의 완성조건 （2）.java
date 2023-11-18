@@ -4,7 +4,7 @@ class Solution {
         int answer = 0;
         Arrays.sort(sides);
         int min = sides[0];
-        int max = sides[1];
+        int max = sides[1]; 
         
         for(int i = max-min+1; i <= max; i++){
             answer++;
