@@ -10,7 +10,7 @@ class Solution {
             if(i%2!=0) {
                 answer[j] = i;
                 j++;
-            }
+            } 
         }
         
         return answer;
