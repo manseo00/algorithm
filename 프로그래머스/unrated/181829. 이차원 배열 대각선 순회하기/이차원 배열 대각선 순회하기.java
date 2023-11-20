@@ -8,7 +8,7 @@ class Solution {
                     answer += board[i][j];
                 }
             }
-        }
+        } 
          
         return answer;
     }
