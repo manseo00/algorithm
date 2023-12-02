@@ -8,7 +8,7 @@ class Solution {
             if(keyinput[i].equals("left")){
                 x--;
                 if(Math.abs(x) > board[0] / 2){
-                    x++;    
+                    x++;     
                 }
             } else if(keyinput[i].equals("right")){
                 x++;
