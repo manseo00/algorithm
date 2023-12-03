@@ -7,7 +7,7 @@ class Solution {
         Arrays.sort(str, Collections.reverseOrder());
         for(String i : str){
             answer += i;
-        }
+        } 
         return answer;
     }
 }
